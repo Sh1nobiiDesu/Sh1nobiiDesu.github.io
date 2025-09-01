@@ -1,31 +1,31 @@
-import React, { useEffect, useState } from "react";
+import {  useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 function Navbar() {
 
   const [click, menuClick] = useState(false);
-  const [button, setButton] = useState(true);
+  // const [button, setButton] = useState(true);
 
   const handleMenuClick = () => menuClick(!click)
   const closeMobileMenu = () => menuClick(false)
 
-  const showButton = () => { 
-    // Check if window is in mobile mode
-    if(window.innerWidth <= 960)
-      setButton(false)
-    else
-      setButton(true)
-  };
+  // const showButton = () => { 
+  //   // Check if window is in mobile mode
+  //   if(window.innerWidth <= 960)
+  //     setButton(false)
+  //   else
+  //     setButton(true)
+  // };
 
   //useEffect iis basically run this after this render (second parameter), [] means to run once on load. 
   // First parameter is what you want to run after a render
-  useEffect(() =>{
-    showButton()
-  },[]);
+  // useEffect(() =>{
+  //   showButton()
+  // },[]);
 
   //Checks if whenever window is resized
-  window.addEventListener('resize',showButton);
+  // window.addEventListener('resize',showButton);
   
 
   return (
@@ -54,10 +54,10 @@ function Navbar() {
               </Link>
             </li>
 
-          {/* SERVICES Nav */}
+          {/* Works Nav */}
             <li className="nav-item">
               <Link
-                to="/Services"
+                to="/Works"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
@@ -65,10 +65,10 @@ function Navbar() {
               </Link>
             </li>
 
-          {/* PRODUCTS Nav */}
+          {/* About me Nav */}
             <li className="nav-item">
               <Link
-                to="/Products"
+                to="/AboutMe"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
