@@ -1,4 +1,3 @@
-import HeroSection from '../components/HeroSection'
 import '../App.css'
 import styles from './Home.module.css'
 import './Skills.css'

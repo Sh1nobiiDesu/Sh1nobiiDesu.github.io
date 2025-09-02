@@ -2,7 +2,6 @@ import CountUp from 'react-countup'
 import { motion, useInView, useAnimation } from 'motion/react'
 import './Skills.css'
 import { useRef, useEffect } from 'react'
-import { div } from 'motion/react-client'
 
 interface SkillProps{
     text: string,
