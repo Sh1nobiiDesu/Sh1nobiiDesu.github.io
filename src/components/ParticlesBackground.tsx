@@ -75,7 +75,7 @@ function ParticleBg() {
                             enable: true,
                             area: 800,
                         },
-                        value: 25,
+                        value: 30,
                     },
                     opacity: {
                         value: 0.5,
