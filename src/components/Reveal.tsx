@@ -24,7 +24,7 @@ function Reveal({children} : Props) {
 
 
     return (
-        <div ref={ref} style={{position:"relative"}}>
+        <div ref={ref} style={{position:"relative", width:"fit-content",overflow:"hidden"}}>
             <motion.div
             variants={{
                 hidden: {opacity:0, y:75},
