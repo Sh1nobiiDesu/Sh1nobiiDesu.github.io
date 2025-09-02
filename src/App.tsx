@@ -6,6 +6,7 @@ import ParticleBg from './components/ParticlesBackground'
 import Home from './pages/Home'
 import Works from './pages/Works'
 import AboutMe from './pages/AboutMe'
+import Skills from './pages/Skills'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Route path='/' Component={Home}></Route>
             <Route path='/Works' Component={Works}></Route>
             <Route path='/AboutMe' Component={AboutMe}></Route>
+            <Route path='/Skills' Component={Skills}></Route>
           </Routes>
       </Router>
     </>
