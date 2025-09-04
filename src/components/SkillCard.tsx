@@ -1,6 +1,6 @@
 import CountUp from 'react-countup'
 import { motion, useInView, useAnimation } from 'motion/react'
-import './Skills.css'
+import '../pages/Skills.css'
 import { useRef, useEffect } from 'react'
 
 interface SkillProps{

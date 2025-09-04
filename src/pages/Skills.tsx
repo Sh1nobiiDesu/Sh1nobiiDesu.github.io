@@ -2,7 +2,7 @@ import '../App.css'
 import styles from './Pages.module.css'
 import './Skills.css'
 import Reveal from '../components/Reveal'
-import SkillCard from './SkillCard'
+import SkillCard from '../components/SkillCard'
 import HeroSection from '../components/HeroSection'
 
 function Skills() {
@@ -23,22 +23,33 @@ function Skills() {
                     </div>
                     <SkillCard text='C#' level={98} />
                     <SkillCard text='C' level={91} />
-                    <SkillCard text='C++' level={76} />
+                    <SkillCard text='C++' level={68} />
                     <SkillCard text='Python' level={79} />
                 </div>
                 <div className="skill-block">
                     <div className={styles.revealCenter}>
                         <Reveal>
-                            <h5 className={`${styles.subHeader} skill-header`} >Web Technologies</h5>
+                            <h5 className={`${styles.subHeader} skill-header`} >Front End</h5>
                         </Reveal>
                     </div>
                     <SkillCard text='HTML' level={95} />
                     <SkillCard text='CSS' level={90} />
                     <SkillCard text='Javascript' level={90} />
-                    <SkillCard text='Jquery' level={87} />
-                    <SkillCard text='PHP' level={87} />
                     <SkillCard text='TypeScript' level={85} />
                     <SkillCard text='React' level={80} />
+                </div>
+                <div className="skill-block">
+                    <div className={styles.revealCenter}>
+                        <Reveal>
+                            <h5 className={`${styles.subHeader} skill-header`} >Back End</h5>
+                        </Reveal>
+                    </div>
+                    <SkillCard text='Node.js' level={89} />
+                    <SkillCard text='Jquery' level={87} />
+                    <SkillCard text='PHP' level={87} />
+                    <SkillCard text='Flask' level={74} />
+                    <SkillCard text='ASP.NET' level={70} />
+                    <SkillCard text='REST' level={70} />
                 </div>
                 <div className="skill-block">
                     <div className={styles.revealCenter}>
