@@ -25,3 +25,34 @@
     justify-content: space-between;
 }
 
+.skill-cards{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.skill-block {
+    display: flex;
+    flex-direction: column;
+    
+    width: 400px;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.skill-header {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 768px){
+    .skill-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+}

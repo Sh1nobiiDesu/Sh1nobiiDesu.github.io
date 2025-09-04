@@ -9,13 +9,12 @@ interface Props{
 function Reveal({children} : Props) {
 
     const ref = useRef(null)
-    const isInView = useInView(ref, {once: true})
+    const isInView = useInView(ref )
     
     const mainControl = useAnimation()
     const slideControl = useAnimation()
 
     useEffect(() => {
-        console.log(isInView)
         if(isInView){
             mainControl.start("visible")
             slideControl.start("visible")
@@ -24,7 +23,7 @@ function Reveal({children} : Props) {
 
 
     return (
-        <div ref={ref} style={{position:"relative", width:"fit-content",overflow:"hidden"}}>
+        <div ref={ref} style={{position:"relative", width:"fit-content"}}>
             <motion.div
             variants={{
                 hidden: {opacity:0, y:75},
