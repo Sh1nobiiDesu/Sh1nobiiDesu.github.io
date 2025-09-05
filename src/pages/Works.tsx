@@ -1,4 +1,3 @@
-// import React from 'react'
 import HeroSection from '../components/HeroSection'
 import '../App.css'
 import '../components/WorkCards.css'
@@ -14,14 +13,14 @@ type Repo = {
     description: string | null
 }
 
-type File = {
-    name: string,
-    path: string
-}
+// type File = {
+//     name: string,
+//     path: string
+// }
 
 function Works() {
     const [repos, setRepo] = useState<Repo[]>([])
-    const [files, setFile] = useState<File[]>([])
+    // const [files, setFile] = useState<File[]>([])
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState(false)
 
