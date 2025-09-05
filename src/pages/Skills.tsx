@@ -7,7 +7,7 @@ import HeroSection from '../components/HeroSection'
 
 function Skills() {
     return (
-        <div className="main-container">
+        <div className={styles.mainContainer}>
             <HeroSection>
                 <Reveal>
                     <h1 className={styles.mainHeader} style={{width:"100%"}}>My <span className='name'>Skills</span></h1>
