@@ -4,7 +4,7 @@ import '../components/WorkCards.css'
 import styles from './Pages.module.css'
 import Reveal from '../components/Reveal'
 import WorkCard from '../components/WorkCard'
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect,  useState } from 'react'
 
 interface Dictionary<T> {
     [id: string]: T
