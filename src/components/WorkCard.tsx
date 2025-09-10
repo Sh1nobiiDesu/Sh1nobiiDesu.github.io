@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 interface cardItemProps {
     src? : string
     text? : string
-    desc? : string
+    desc? : string | null
     label? : string 
     path : string
 }

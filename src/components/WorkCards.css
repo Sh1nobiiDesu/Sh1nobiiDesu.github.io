@@ -108,6 +108,8 @@
 @media only screen and (min-width: 1024px) {
   .cards__items {
     display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
   }
 }
 
