@@ -2,6 +2,7 @@ import HeroSection from "../components/HeroSection"
 import Reveal from "../components/Reveal"
 import styles from "./Pages.module.css"
 import Works from "./Works"
+import '../App.css'
 
 function MyWorks() {
     return (
