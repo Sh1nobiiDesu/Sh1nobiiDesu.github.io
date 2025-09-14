@@ -36,6 +36,9 @@ function Home() {
                     </Reveal>
                 </div>
             </HeroSection>
+            {/* <AboutMe />
+            <MyWorks />
+            <Skills /> */}
         </>
 
     )

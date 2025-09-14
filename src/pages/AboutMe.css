@@ -21,14 +21,13 @@
 .myImage{
     width: 30vh;
     align-self: center;
-
+    border-radius: 20px;
 }
 
 .subtext{
-    color: #fff;
+    color: #cecece;
     text-align: center;
     font-size: 15px;
-
 }
 
 .image-container{

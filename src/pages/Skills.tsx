@@ -69,6 +69,7 @@ function Skills() {
                     </div>
                     <SkillCard text='PLC Logic' level={72} />
                     <SkillCard text='Github' level={68} />
+                    <SkillCard text='Linux' level={49} />
                 </div>
 
             </div>
