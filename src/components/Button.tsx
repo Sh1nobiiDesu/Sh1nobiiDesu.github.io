@@ -1,6 +1,5 @@
 import { type ReactNode } from 'react'
 import './Button.css'
-import { Link } from 'react-router-dom';
 
 interface btnProps{
     children : ReactNode

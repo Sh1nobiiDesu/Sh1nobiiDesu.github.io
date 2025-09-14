@@ -18,12 +18,6 @@ function Navbar() {
       setButton(true)
   }
 
-  const downloadResume = () => {
-    const download = document.createElement("a")
-    download.href = "/Resume_MarkTangon.pdf"
-    download.download = "Resume_MarkTangon.pdf"
-    download.click
-  }
 
   useEffect(() => {
     showBTN()
@@ -97,7 +91,7 @@ function Navbar() {
               
             </li>}
           </ul>
-          {button && <Button buttonStyle="btn--outline" onClick={downloadResume}>Resume</Button>}
+          {button && <Button buttonStyle="btn--outline" >Resume</Button>}
         </div>
       </nav>
     </>
