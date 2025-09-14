@@ -58,3 +58,10 @@
 .sub-container{
     display: flex;
 }
+
+
+@media screen and (max-width: 768px){
+    .AboutContainer{
+        flex-direction: column;
+    }
+}

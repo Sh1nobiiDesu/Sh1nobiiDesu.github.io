@@ -1,13 +1,35 @@
-import {  useState } from "react";
+import {  useEffect, useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { Button } from "./Button";
 
 function Navbar() {
 
   const [click, menuClick] = useState(false);
+  const [button, setButton] = useState(true)
 
   const handleMenuClick = () => menuClick(!click)
   const closeMobileMenu = () => menuClick(false)
+
+  const showBTN = () => {
+    if(window.innerWidth <= 960)
+      setButton(false)
+    else
+      setButton(true)
+  }
+
+  const downloadResume = () => {
+    const download = document.createElement("a")
+    download.href = "/Resume_MarkTangon.pdf"
+    download.download = "Resume_MarkTangon.pdf"
+    download.click
+  }
+
+  useEffect(() => {
+    showBTN()
+  }, [])
+
+  window.addEventListener("resize", showBTN)
 
   return (
     <>
@@ -67,7 +89,15 @@ function Navbar() {
                 About me
               </Link>
             </li>
+
+            {!button && <li className="nav-item">
+              <a href="/Resume_MarkTangon.pdf" download={"Resume_MarkTangon.pdf"} className="nav-links" onClick={closeMobileMenu}>
+                Resume
+              </a>
+              
+            </li>}
           </ul>
+          {button && <Button buttonStyle="btn--outline" onClick={downloadResume}>Resume</Button>}
         </div>
       </nav>
     </>
