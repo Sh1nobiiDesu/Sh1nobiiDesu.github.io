@@ -4,6 +4,9 @@ import '../App.css'
 import Reveal from '../components/Reveal'
 import styles from './Pages.module.css'
 import { useEffect, useState } from 'react'
+import AboutMe from './AboutMe'
+import MyWorks from './MyWorks'
+import Skills from './Skills'
 
 function Home() {
     const [isMobile, setMobile] = useState(false)
@@ -22,16 +25,19 @@ function Home() {
     window.addEventListener("resize", checkIfMobile)
 
     return (
-        <HeroSection>
-            <Reveal>
-                <h1 className={styles.mainHeader}>Hello there, I'm <span className="name">Mark</span>  Tangon</h1>
-            </Reveal>
-            <div style={{alignSelf: "center", width:`${isMobile ? "" : "45%"}`}}>
+        <>
+            <HeroSection>
                 <Reveal>
-                    <p className={styles.subHeader}>Software Developer</p>
+                    <h1 className={styles.mainHeader}>Hello there, I'm <span className="name">Mark</span>  Tangon</h1>
                 </Reveal>
-            </div>
-        </HeroSection>
+                <div style={{alignSelf: "center", width:`${isMobile ? "" : "45%"}`}}>
+                    <Reveal>
+                        <p className={styles.subHeader}>Software Developer</p>
+                    </Reveal>
+                </div>
+            </HeroSection>
+        </>
+
     )
 }
 

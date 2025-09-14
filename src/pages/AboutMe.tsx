@@ -18,7 +18,7 @@ function AboutMe() {
             <Reveal>
               <div className="TextArea">
                 <h1 className='mainAbout'>
-                    Hey! My name is Mark Frederick Tangon, a software developer with a solid foundation in programming, And 
+                    Hey! My name is <span className='name'>Mark Frederick Tangon</span>, a software developer with a solid foundation in programming, And 
                     I've had my fair share of code that does not work that even the great ChatGPT can't fix but have always managed to find ways to get around them.
                     I'm always eager to learn new things and can learn things quite quick. I work well in team environments and believe that everybody has to pull
                     their own weight including my own. Whenever I hit a wall or rock bottom I always tell myself that this is part of the process and as long as

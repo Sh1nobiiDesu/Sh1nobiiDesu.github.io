@@ -1,6 +1,6 @@
 import {  useEffect, useState } from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "./Button";
 
 function Navbar() {
@@ -10,6 +10,10 @@ function Navbar() {
 
   const handleMenuClick = () => menuClick(!click)
   const closeMobileMenu = () => menuClick(false)
+
+  const location = useLocation()
+  const currentPath = location.pathname
+  console.log(currentPath == '/' ? "hi" : "hello")
 
   const showBTN = () => {
     if(window.innerWidth <= 960)
@@ -44,7 +48,7 @@ function Navbar() {
             <li className="nav-item">
               <Link
                 to="/"
-                className="nav-links"
+                className={`nav-links ${currentPath === '/' ? "current-page" : ""}`}
                 onClick={closeMobileMenu}
               >
                 Home
@@ -55,7 +59,7 @@ function Navbar() {
             <li className="nav-item">
               <Link
                 to="/Works"
-                className="nav-links"
+                className={`nav-links ${currentPath === '/Works' ? "current-page" : ""}`}
                 onClick={closeMobileMenu}
               >
                 Works
@@ -66,7 +70,7 @@ function Navbar() {
             <li className="nav-item">
               <Link
                 to="/Skills"
-                className="nav-links"
+                className={`nav-links ${currentPath === '/Skills' ? "current-page" : ""}`}
                 onClick={closeMobileMenu}
               >
                 Skills
@@ -77,7 +81,7 @@ function Navbar() {
             <li className="nav-item">
               <Link
                 to="/AboutMe"
-                className="nav-links"
+                className={`nav-links ${currentPath === '/AboutMe' ? "current-page" : ""}`}
                 onClick={closeMobileMenu}
               >
                 About me
