@@ -1,9 +1,7 @@
 .AboutContainer{
     display: flex;
-    flex-flow: column;
     align-items: center;
     justify-content: center;
-    /* background: linear-gradient(90deg, rgba(33, 33, 33, 0.1) 0%, rgb(26, 23, 23) 100%); */
     background-color: rgba(33, 33, 33, 0.1);
     margin: 0 auto;
     width: 90%;
@@ -11,10 +9,52 @@
     border-radius: 10px;
     max-width: 1120px;
     box-shadow: 0 6px 20px rgba(30, 215, 96, 0.17);
+    gap: 20px;
 }
 
 .mainAbout{
     color: #fff;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
+}
+
+.myImage{
+    width: 30vh;
+    align-self: center;
+
+}
+
+.subtext{
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+
+}
+
+.image-container{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.social-links{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(33, 33, 33, 0.1);
+    box-shadow: 0 6px 20px rgba(30, 215, 96, 0.17);
+    border-radius: 40px;
+    padding: 1%;
+    justify-content: space-evenly;
+}
+
+.social-icon-link{
+    color: #fff;
+    font-size: 3.5vh;
+}
+
+.sub-container{
+    display: flex;
 }

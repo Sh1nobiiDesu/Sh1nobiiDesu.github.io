@@ -23,8 +23,8 @@ function Navbar() {
             <i className={click ? "fas fa-times" : "fa fa-bars"}></i>
           </div>
 
-          {/* HOME Nav */}
           <ul className={click ? "nav-menu active" : "nav-menu"}>
+            {/* HOME Nav */}
             <li className="nav-item">
               <Link
                 to="/"

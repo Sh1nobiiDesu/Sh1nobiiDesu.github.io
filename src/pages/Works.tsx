@@ -116,7 +116,7 @@ function Works() {
                     <Reveal>
                         <WorkCard src='images/capstone.jpg' text='ThereMIDI' path='/Works' 
                         desc='Handless Musical Instrument where you play a wide range of instruments without the need of physical touch.
-                        Simple Gestures with the hand lead to different notes being played, Alongside many features such as recording and playback' 
+                        Simple Gestures with the hand lead to different notes being played, Alongside many features such as recording and playback. (No github repository available)' 
                         label='C, Python, ...'/>
                     </Reveal>
                     <Reveal>
